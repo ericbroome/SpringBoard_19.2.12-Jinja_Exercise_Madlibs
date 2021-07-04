@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title%}Story{% endblock %}
+{% block content %}
+<div><h1>Your Story</h1></div>
+    <div id="story_div" class="border-div">
+        <p>{{text}}</p> 
+        <button onclick="top.location.href='/'">&lt;-Back</button>
+    </div>
+{% endblock %}

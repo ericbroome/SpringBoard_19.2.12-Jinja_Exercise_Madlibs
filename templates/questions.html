@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Questions Form{% endblock %}
+{% block content %}        
+    <div><h1>MadLibs</h1><div>
+    <div id="questions_div" class="border-div">
+        <form name="questions" action="/story">
+            {%for prompt in prompts%}
+                <p>{{prompts[prompt]}}:
+                    <input name="{{prompt}}">
+                </p>
+            {%endfor%}
+            <button type="submit" value="submit">Submit</button>
+            <button id="randomStory">Random Story</button>
+        </form>
+    </div>
+    <div id="story_div" class="border-div">
+        {{template}}
+    </div>
+    <script>
+        document.getElementById("randomStory").addEventListener("click", (event) => {
+            event.preventDefault();
+            top.location.reload();    //Just reload and hope for a better story
+        })
+    </script>
+{% endblock %}
