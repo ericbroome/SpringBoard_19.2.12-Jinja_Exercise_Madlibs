@@ -66,7 +66,7 @@ stories.append(Story(
     """
         One day a/n {adjective} {noun} decided to {verb} for some {plural_noun}, not because {gender_pronoun} really wanted to
         but because {gender_pronoun} thought it would be a good idea. So {gender_pronoun} went about {verb}ing and eventually
-        ended up {adective}ly {verb}ing every day for ever and ever.
+        ended up {adjective}ly {verb}ing every day for ever and ever.
     """
 ))
 
